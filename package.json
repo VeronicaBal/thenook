@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "migrate": "node model/database.js"
+    "migrate": "node model/database.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -23,6 +24,5 @@
     "node-fetch": "^2.6.7",
     "nodemon": "^2.0.20",
     "react-router-dom": "^6.4.3"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
