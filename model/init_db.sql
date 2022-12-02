@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS users_books;
 DROP TABLE IF EXISTS clubs;
 DROP TABLE IF EXISTS books_clubs;
 DROP TABLE IF EXISTS users_clubs;
--- SET foreign_key_checks = 1;
+SET foreign_key_checks = 1;
 
 
 CREATE TABLE `users`(
@@ -44,7 +44,7 @@ CREATE TABLE `clubs`(
     `next_mtg_postal_code` VARCHAR(255),
     `next_mtg_country` VARCHAR(255) NOT NULL,
     `image` VARCHAR(255) NOT NULL,
-    `book_poll_info` JSON
+    `book_poll_info` TEXT
 );
 
 CREATE TABLE `books_clubs`(
