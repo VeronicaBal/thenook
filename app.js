@@ -25,6 +25,9 @@ app.use("/books", booksRouter);
 app.use("/clubs", clubsRouter);
 app.use(authRouter);
 app.use(usersClubs);
+app.get("*", (req, res) => { 
+  res.sendFile(path.join(__dirname + '/client/build/index.html')); 
+})
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
