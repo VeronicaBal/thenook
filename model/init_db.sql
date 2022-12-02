@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS users_books;
 DROP TABLE IF EXISTS clubs;
 DROP TABLE IF EXISTS books_clubs;
 DROP TABLE IF EXISTS users_clubs;
-SET foreign_key_checks = 1;
+-- SET foreign_key_checks = 1;
 
 
 CREATE TABLE `users`(
