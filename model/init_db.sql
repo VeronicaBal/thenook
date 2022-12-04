@@ -61,8 +61,7 @@ CREATE TABLE `users_clubs`(
     `admin` TINYINT(1) NOT NULL
 );
 
-ALTER TABLE
-    `users_clubs` ADD CONSTRAINT `users_clubs_users_id_foreign` FOREIGN KEY(`user_id`) REFERENCES `users`(`id`);
+
 ALTER TABLE
     `users_books` ADD CONSTRAINT `users_books_user_id_foreign` FOREIGN KEY(`user_id`) REFERENCES `users`(`id`);
 ALTER TABLE
@@ -70,10 +69,11 @@ ALTER TABLE
 ALTER TABLE
     `books_clubs` ADD CONSTRAINT `books_clubs_book_id_foreign` FOREIGN KEY(`book_id`) REFERENCES `books`(`id`);
 ALTER TABLE
-    `users_clubs` ADD CONSTRAINT `users_clubs_clubs_id_foreign` FOREIGN KEY(`club_id`) REFERENCES `clubs`(`id`);
-ALTER TABLE
     `books_clubs` ADD CONSTRAINT `books_clubs_club_id_foreign` FOREIGN KEY(`club_id`) REFERENCES `clubs`(`id`);
-
+ALTER TABLE
+    `users_clubs` ADD CONSTRAINT `users_clubs_users_id_foreign` FOREIGN KEY(`user_id`) REFERENCES `users`(`id`);
+ALTER TABLE
+    `users_clubs` ADD CONSTRAINT `users_clubs_clubs_id_foreign` FOREIGN KEY(`club_id`) REFERENCES `clubs`(`id`);
 
 INSERT INTO users (username, email, password)
     VALUES ('johndoe', 'johndoe@example.com', '$2b$12$eFzMWbS9SogNtxkmo3J7aO8FQMFQSKbtpwLMIOVsF6GGKpTQdgq.W'),
