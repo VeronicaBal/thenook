@@ -30,15 +30,15 @@ function NavBar(props) {
         {/* navbar items left */}
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav">
-            <a href="/" className="nav-item nav-link ">
+            <NavLink href="/" className="nav-item nav-link ">
               Home
-            </a>
-            <a href="/clubs" className="nav-item nav-link">
+            </NavLink>
+            <NavLink href="/clubs" className="nav-item nav-link">
               Clubs
-            </a>
-            <a href="/books/all" className="nav-item nav-link">
+            </NavLink>
+            <NavLink href="/books/all" className="nav-item nav-link">
               Books
-            </a>
+            </NavLink>
 
             {/* profile link showing up only if logged in */}
             {props.user ? (
