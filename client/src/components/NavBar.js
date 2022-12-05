@@ -30,13 +30,13 @@ function NavBar(props) {
         {/* navbar items left */}
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav">
-            <NavLink href="/" className="nav-item nav-link ">
+            <NavLink to="/" className="nav-item nav-link ">
               Home
             </NavLink>
-            <NavLink href="/clubs" className="nav-item nav-link">
+            <NavLink to="/clubs" className="nav-item nav-link">
               Clubs
             </NavLink>
-            <NavLink href="/books/all" className="nav-item nav-link">
+            <NavLink to="/books/all" className="nav-item nav-link">
               Books
             </NavLink>
 
