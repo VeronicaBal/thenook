@@ -5,7 +5,7 @@
 
 <h2> By Antonia Vladut, Lauren Goldstein, Tina Decman, Veronica Baldin </h2>
 
-   <a href="https://github.com/CodeOp-tech/FS22_Team1">**Explore the docs »**</a>
+   <a href="https://thenookapp.herokuapp.com/">**Try it Live**</a>
     <br />
     <br />
     <a href="https://user-images.githubusercontent.com/113427751/204394477-eb817b0f-6112-4ece-b19b-577d740a6fe0.mp4">View Demo</a>
@@ -14,7 +14,7 @@
     ·
     <a href="https://github.com/CodeOp-tech/FS22_Team1/issues">Request Feature</a>
   </p>
-</div>
+
 <br>
 <details>
   <summary>Table of Contents</summary>
@@ -45,7 +45,7 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+</div>
 
 ## Introduction
 
